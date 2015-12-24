@@ -1,0 +1,19 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: "Start year"|t,
+    instructions: "What year should we start counting? Use a full year notation or a PHP [```strtotime()```](http://php.net/manual/en/function.strtotime.php) value based on the current date/time."|t,
+    id: 'yearRangeStart',
+    name: 'yearRangeStart',
+    value: settings.yearRangeStart,
+    errors: settings.getErrors('yearRangeStart')
+}) }}
+
+{{ forms.textField({
+    label: "End year"|t,
+    instructions: "What year should we end counting? Use a full year notation or a PHP [```strtotime()```](http://php.net/manual/en/function.strtotime.php) value based on the current date/time."|t,
+    id: 'yearRangeEnd',
+    name: 'yearRangeEnd',
+    value: settings.yearRangeEnd,
+    errors: settings.getErrors('yearRangeEnd')
+}) }}
