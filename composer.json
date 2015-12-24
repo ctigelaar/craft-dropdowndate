@@ -1,0 +1,14 @@
+{
+    "name": "ctigelaar/craft-dropdowndate",
+    "description": "Custom fieldtype for Craft to display a DateTime field as separate dropdowns",
+    "authors": [
+        {
+            "name": "Christiaan Tigelaar",
+            "homepage": "https://github.com/ctigelaar"
+        }
+    ],
+    "type": "craft-plugin",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
